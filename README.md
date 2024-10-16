@@ -1,5 +1,5 @@
 # Course Manager - A Simple Web-Based Classroom Management System
-## Description: Course Manager is a web-based platform designed for teachers and students to seamlessly manage courses, enrollments, and user profiles. Built using Spring Boot for the backend and Vanilla JavaScript for the frontend, the system offers easy-to-navigate dashboards for both students and teachers, allowing users to create, update, and manage courses, as well as enroll in or drop courses.
+## Course Manager is a web-based platform designed for teachers and students to seamlessly manage courses, enrollments, and user profiles. Built using Spring Boot for the backend and Vanilla JavaScript for the frontend, the system offers easy-to-navigate dashboards for both students and teachers, allowing users to create, update, and manage courses, as well as enroll in or drop courses.
 
 ### Key Features:
 
