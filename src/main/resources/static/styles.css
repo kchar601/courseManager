@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Noto%20Sans:700|Domine:600");
+
+* {
+  --text: #081a1f;
+  --background: #f9fcfd;
+  --primary: #5c99a9;
+  --secondary: #91a1e1;
+  --accent: #675fd4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Domine";
+  font-weight: 600;
+  background-color: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  max-width: 50rem;
+  padding: 0rem 3rem 3rem 3rem;
+  margin: auto;
+  border: var(--text) solid 2px;
+  border-radius: 1rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.loginBox > *:not(h2) {
+  margin-bottom: 2rem;
+}
+
+.loginBox input {
+  margin: auto auto 2rem auto;
+  width: 12rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px var(--text);
+}
+
+.loginBox span * {
+  margin: 0.5rem;
+  width: fit-content;
+}
+
+.loginBox button {
+  font-size: 1rem;
+  width: fit-content;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  border: 2px solid var(--text);
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+.loginBox button:hover {
+  background-color: color-mix(in srgb, black 20%, var(--accent) 80%);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 1rem 3rem;
+  border-bottom: var(--text) solid 2px;
+  font-size: 1.333rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul a:hover {
+  background-color: color-mix(in srgb, black 20%, var(--primary) 80%);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.333rem;
+}
+
+main {
+  padding: 2rem 3rem;
+}
+
+.titleRow {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: fit-content;
+}
+
+.titleRow a {
+  align-content: center;
+}
+
+#course-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#course-list a {
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.333rem;
+  border-radius: 0.5rem;
+}
+
+#course-list a:hover {
+  background-color: color-mix(in srgb, black 20%, var(--background) 80%);
+}
+
+#course-list > li {
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.333rem;
+}
+
+#course-list > li > button,
+.ctaBtn {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 1.333rem;
+  border-radius: 0.5rem;
+  background-color: grey;
+  color: var(--background);
+  margin-right: 2rem;
+}
+
+#course-list > li:not(:last-child) {
+  border-right: var(--text) solid 2px;
+}
+
+#course-list > li > button.btnHover,
+#course-list > li > button.ctaBtn,
+.ctaBtn {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+#course-list > li > button.btnHover:hover,
+#course-list > li > button.ctaBtn:hover,
+.ctaBtn:hover {
+  background-color: color-mix(in srgb, black 20%, var(--accent) 80%);
+}
+
+#course-detail,
+#user-detail,
+.fourbyfour {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+#user-detail, .fourbyfour {
+  align-items: center;
+}
+
+#user-detail > h4,
+.fourbyfour > h4 {
+  display: inline-block;
+}
+
+#user-detail > input,
+#user-detail > .ctaBtn,
+.fourbyfour > input,
+.fourbyfour > .ctaBtn {
+  width: fit-content;
+  height: fit-content;
+  font-size: 1rem;
+}

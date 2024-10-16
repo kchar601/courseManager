@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Manager - Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="center-text">
+    <h1>Course Manager</h1>
+    <main>
+      <div class="loginBox">
+        <h2>Log In</h2>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          name="password"
+          type="password"
+          id="password"
+          placeholder="Password"
+        />
+        <span>
+          <label for="showPass">Show Password?</label>
+          <input type="checkbox" name="showPass" onClick="showPassword()" />
+        </span>
+        <button onClick="attemptLogin()">Submit</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

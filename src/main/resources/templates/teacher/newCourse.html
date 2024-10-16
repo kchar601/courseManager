@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Manager - New Course</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav id="conditionalNav"></nav>
+    <main>
+      <h2>Create a new course</h2>
+      <div class="newCourse">
+        <h3>New Course</h3>
+        <div class="fourbyfour">
+          <h4 for="course-title">Course Title</h4>
+          <h4 for="course-subject">Course Subject</h4>
+          <h4 for="course-room">Course Room</h4>
+          <span></span>
+          <input type="text" id="course-title" name="course-title" required />
+          <input
+            type="text"
+            id="course-subject"
+            name="course-subject"
+            required
+          />
+          <input type="text" id="course-room" name="course-room" required />
+          <button class="ctaBtn">Create Course</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="/checkAccess.js"></script>
+    <script src="/teacher/newCourse.js"></script>
+  </body>
+</html>

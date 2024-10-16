@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Manager - Teacher</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav id="conditionalNav">
+    </nav>
+    <main>
+      <h2>Dashboard</h2>
+      <div class="dashboard">
+        <div class="card">
+          <div class="titleRow">
+            <h3>Courses</h3>
+            <a href="/teacher/newCourse">Create a New Course</a>
+          </div>
+          <ul id="course-list"></ul>
+        </div>
+    </main>
+
+    <script src="/checkAccess.js"></script>
+    <script src="/teacher/dashboard.js"></script>
+  </body>
+</html>
