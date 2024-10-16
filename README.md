@@ -1,24 +1,21 @@
-# Course Manager - A Simple Web-Based Classroom Management System
-## Course Manager is a web-based platform designed for teachers and students to seamlessly manage courses, enrollments, and user profiles. Built using Spring Boot for the backend and Vanilla JavaScript for the frontend, the system offers easy-to-navigate dashboards for both students and teachers, allowing users to create, update, and manage courses, as well as enroll in or drop courses.
+# Course Manager Application
+## This is a full-stack web application designed to manage student enrollment in courses, primarily focused on student and teacher interactions. The platform allows teachers to create and manage courses, while students can view, enroll, and drop courses. Both students and teachers have distinct dashboards and capabilities.
 
 ### Key Features:
+- User Authentication: Email-based login system. Once logged in, users are assigned roles (student or teacher) to access their respective functionalities.
+- Course Management for Teachers: Teachers can create, update, and delete courses, as well as view students enrolled in their courses.
+- Student Enrollment: Students can browse available courses, enroll in them, and drop courses if necessary.
+- Role-Based Access: While the system identifies user roles (student or teacher), role access is managed primarily through frontend navigation and basic session checks.
+- Frontend: Built with vanilla JavaScript and fetch API for communication with the backend.
+- Backend: RESTful API using Spring Boot and PostgreSQL for data persistence.
 
-- Teacher Dashboard: Teachers can create, edit, and delete courses, manage class details, and view all their assigned courses.
-- Student Dashboard: Students can browse available courses, enroll, and drop courses with real-time updates on their enrollment status.
-- User Authentication: Secure login system that directs users to specific dashboards based on their roles (Teacher or Student).
-- Profile Management: Users can update their personal information, including their first name, last name, and email.
-- Course Enrollment: Students can view available courses, enroll, and track their current enrollments, while teachers manage class rosters.
-
-### Technologies Used:
-
-- Backend: Spring Boot with Java, JPA for data persistence
-- Frontend: HTML, CSS, Vanilla JavaScript
-- Database: PostgreSQL
-- User Authentication: Role-based authentication with localStorage for session management
+### Endpoints Overview:
+- User Management: Login, retrieve, and update user profiles.
+- Course Management: Create, update, and delete courses, view courses by teacher or student.
+- Enrollment Management: Enroll in or drop courses, check enrollments by student.
 
 ### Getting Started:
-
-- Clone the repository: git clone <repo-url>
+- Clone the repository: git clone https://github.com/kchar601/courseManager
 - Configure your database in the application.properties file.
 - Run the Spring Boot application.
 - Visit the homepage and sign in as a teacher or student to explore features.
@@ -27,8 +24,6 @@
 #### Password Authentication is not currently enabled
 #### Student
 - john@gmail.com
-
 #### Instructor / Teacher
 - charltonkeith8@gmail.com
-
-#### Feel free to explore and contribute!
+##### Feel free to explore and contribute!
